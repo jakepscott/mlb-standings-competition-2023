@@ -11,7 +11,7 @@ al <- mlb_standings(season = 2023, league_id = 103, date = "2023-3-30") %>%
   mutate(date = "2023-03-30") %>% 
   head(0) 
 
-dates <- as.character(seq(as.Date("2023-3-30"), as.Date("2023-9-20"), by="days"))
+dates <- as.character(seq(as.Date("2023-3-30"), as.Date("2023-9-22"), by="days"))
 
 
 for (date in dates){
@@ -34,9 +34,6 @@ nl <- mlb_standings(season = 2023, league_id = 103, date = "2023-3-30") %>%
   select(team_records_wins, team_records_team_name) %>% 
   mutate(date = "2023-03-30") %>% 
   head(0) 
-
-dates <- as.character(seq(as.Date("2023-3-30"), as.Date("2023-9-20"), by="days"))
-
 
 #National league
 for (date in dates){
